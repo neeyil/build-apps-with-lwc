@@ -16,7 +16,7 @@ export default class BearLocation extends LightningElement {
     @wire(getRecord, { recordId: '$recordId', fields: bearFields })
     loadBear({ error, data }) {
         if (error) {
-            // TODO: handle error
+            // TOD: handle error
         } else if (data) {
             // Get Bear data
             this.name = getFieldValue(data, NAME_FIELD);
